@@ -1,0 +1,41 @@
+
+# NFT Metadata
+token_prefix: Example Name
+description: An example token description
+amount: 30
+
+# token IDs will start from 0, unless this is set to true.
+id_from_one: false
+
+#change this to ar:// or https://arweave.net/ if you're using Arweave.
+uri_prefix: ipfs://
+
+# replace this with your image URI once uploaded to IPFS/Arweave
+new_uri: BaseURI
+
+# Adds count and frequency % to metadata files
+rich_metadata: true
+
+# set this to true if you want extra metadata/rarity scores for paintswap
+# **IMPORTANT** This requires rich metadata to be set to true in order to function.
+paintswap_metadata: true
+
+# set this to true if aren't providing background layers, and set 
+# a color you would like to use
+draw_background: true
+canvas_width: 480
+canvas_height: 480
+background_color: "pink"
+
+# Set up your layer configuration here.
+layers:
+  - name: Body
+    rarities: [25, 25, 25, 25]
+    required: true
+  - name: Beard
+    rarities: [10, 6, 5, 10, 6, 4, 40]
+    required: false
+  - name: Eyes
+    rarities: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+    required: true
+
