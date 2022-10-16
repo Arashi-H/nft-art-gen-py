@@ -70,5 +70,3 @@ images and metadata will start being created :partying_face:
 4.  Push to the branch: `git push origin my-new-feature`
 5.  Submit a pull request
 
-## License
-MIT © [felwintrr](https://github.com/felwintrr)
